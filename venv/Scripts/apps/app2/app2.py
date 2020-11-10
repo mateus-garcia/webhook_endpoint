@@ -9,6 +9,8 @@ layout = html.Div([
     dcc.Location(id='url', refresh=False),
     html.Div(id='app2_sidebar'),
     html.H1('Page 2'),
+    html.H2('This is the page 2'),
+    html.P('This is a dummy page for the dummy page'),
     dcc.RadioItems(
         id='page-2-radios',
         options=[{'label': i, 'value': i} for i in ['Orange', 'Blue', 'Red']],
